@@ -1,0 +1,452 @@
+[11/24/2026 3:47 PM] Antagonist: <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="آرشیو معرفی عمومی سامانه‌های موشکی">
+    <title>Military Archive | آرشیو نظامی</title>
+    <link rel="stylesheet" href="indexl.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav">
+        <a href="#home" class="logo">
+            <span class="logo-mark">MA</span>
+            <span>MILITARY ARCHIVE</span>
+        </a>
+
+        <nav>
+            <a href="#home">صفحه اصلی</a>
+            <a href="#missiles">سامانه‌ها</a>
+            <a href="#about">درباره آرشیو</a>
+        </nav>
+
+        <span class="status">ARCHIVE ONLINE</span>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <span class="eyebrow">DEFENSE SYSTEMS DATABASE</span>
+
+        <h1>
+            آرشیو جامع
+            <span>سامانه‌های موشکی</span>
+        </h1>
+
+        <p>
+            مجموعه‌ای برای معرفی عمومی سامانه‌های موشکی،
+            فناوری‌های دفاعی و اطلاعات تاریخی مرتبط.
+        </p>
+
+        <a href="#missiles" class="main-btn">مشاهده آرشیو</a>
+    </div>
+
+    <div class="hero-decoration">
+        <div class="radar-circle"></div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="intro container" id="about">
+    <span class="section-label">ABOUT ARCHIVE</span>
+    <h2>درباره آرشیو نظامی</h2>
+
+    <p>
+        Military Archive مجموعه‌ای اطلاعاتی با هدف معرفی عمومی
+        سامانه‌های موشکی و فناوری‌های دفاعی است. اطلاعات این
+        مجموعه با تأکید بر تفکیک مشخصات تأییدشده از گزارش‌های
+        غیررسمی ارائه می‌شوند.
+    </p>
+</section>
+
+
+<!-- MISSILE CARDS -->
+<section class="missiles-section" id="missiles">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">MISSILE DATABASE</span>
+                <h2>سامانه‌های موشکی</h2>
+            </div>
+
+            <span class="archive-count">03 SYSTEMS</span>
+        </div>
+
+
+        <div class="missile-grid">
+
+            <!-- KHYBER -->
+            <article class="missile-card">
+                <div class="card-image">
+                    <img src="k2p.jpg" alt="تصویر موشک خیبرشکن">
+                    <span class="image-label">BALLISTIC SYSTEM</span>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-number">SYSTEM 001</span>
+                    <h3>خیبرشکن</h3>
+
+                    <p>
+                        معرفی عمومی سامانه خیبرشکن و بررسی
+                        ویژگی‌های اعلام‌شده درباره طراحی و ساختار آن.
+                    </p>
+
+                    <button class="more-info-btn"
+                            onclick="openModal('khyberModal')">
+                        مشاهده اطلاعات <span>←</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- FATTAH -->
+            <article class="missile-card">
+                <div class="card-image">
+                    <img src="f.jpg" alt="تصویر موشک فتاح">
+                    <span class="image-label">MISSILE SYSTEM</span>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-number">SYSTEM 002</span>
+                    <h3>فتاح</h3>
+
+                    <p>
+                        معرفی عمومی موشک فتاح و فناوری‌های
+                        اعلام‌شده در گزارش‌های مربوط به آن.
+                    </p>
+
+                    <button class="more-info-btn"
+                            onclick="openModal('fattahModal')">
+                        مشاهده اطلاعات <span>←</span>
+                    </button>
+                </div>
+            </article>
+ <!-- SEJJIL -->
+            <article class="missile-card">
+                <div class="card-image">
+                    <img src="sp.webp" alt="تصویر موشک سجیل">
+                    <span class="image-label">SOLID FUEL SYSTEM</span>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-number">SYSTEM 003</span>
+                    <h3>سجیل</h3>
+
+                    <p>
+                        معرفی سامانه سجیل، ساختار کلی دومرحله‌ای
+                        و فناوری پیشران سوخت جامد آن.
+                    </p>
+
+                    <button class="more-info-btn"
+                            onclick="openModal('sejjilModal')">
+                        مشاهده اطلاعات <span>←</span>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- KHYBER MODAL -->
+<div class="modal-overlay" id="khyberModal"
+     onclick="closeOutside(event, 'khyberModal')">
+
+    <div class="modal-content" role="dialog"
+         aria-modal="true" aria-labelledby="khyberTitle">
+
+        <button class="modal-close"
+                onclick="closeModal('khyberModal')"
+                aria-label="بستن پنجره">&times;</button>
+
+        <div class="modal-hero-image">
+            <img src="images/khyber.jpg" alt="موشک خیبرشکن">
+        </div>
+
+        <div class="modal-body">
+            <span class="modal-category">MISSILE SYSTEM / IRAN</span>
+            <h2 id="khyberTitle">خیبرشکن</h2>
+            <div class="modal-divider"></div>
+
+            <h3>نسل اول</h3>
+            <p>
+                در این نسل از کلاهک سه‌مخروطی (TRICONIC)
+                استفاده شده است. این طراحی به حفظ تعادل موشک
+                در مرحله پایانی پرواز کمک می‌کند. شکل بالک‌های
+                کنترلی آن نیز از ویژگی‌های ظاهری مورد توجه است.
+            </p>
+
+            <h3>نسل دوم</h3>
+            <p>
+                در این نسل، شکل کلاهک به یک مخروط کشیده تغییر
+                کرده است. هدف از این تغییر، کاهش مقاومت هوا و
+                حفظ سرعت بیشتر عنوان شده است. برخی گزارش‌ها
+                برد حدود ۱۸۰۰ کیلومتر را برای این نمونه مطرح می‌کنند.
+            </p>
+
+            <h3>نمونه مجهز به کاونده اپتیکی</h3>
+            <p>
+                در برخی گزارش‌ها به نمونه‌ای با حسگر اپتیکی
+                اشاره شده است. این حسگر برای دریافت اطلاعات
+                تصویری به کار می‌رود.
+            </p>
+
+            <h3>مواد به‌کاررفته در کلاهک</h3>
+            <p>
+                اطلاعات رسمی و تأییدشده‌ای درباره ترکیبات
+                داخلی کلاهک منتشر نشده است. برخی گزارش‌ها
+                به استفاده احتمالی از مواد پرانرژی اشاره دارند.
+            </p>
+
+            <h3>قابلیت‌های توسعه</h3>
+            <p>
+                گزارش‌هایی درباره امکان توسعه نسخه‌های
+                متفاوت کلاهک این سامانه منتشر شده است؛
+                اما جزئیات آن‌ها به‌طور مستقل تأیید نشده‌اند.
+            </p>
+
+            <div class="modal-warning">
+                <strong>یادداشت آرشیو:</strong>
+                بخشی از اطلاعات این سامانه بر اساس گزارش‌های
+                غیررسمی است و تمام مشخصات آن تأیید مستقل نشده‌اند.
+            </div>
+
+            <div class="modal-footer">
+                <span>#KHYBERSHEKAN</span>
+                <span>PUBLIC INFORMATION</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FATTAH MODAL -->
+<div class="modal-overlay" id="fattahModal"
+     onclick="closeOutside(event, 'fattahModal')">
+
+    <div class="modal-content" role="dialog"
+         aria-modal="true" aria-labelledby="fattahTitle">
+
+        <button class="modal-close"
+                onclick="closeModal('fattahModal')"
+                aria-label="بستن پنجره">&times;</button>
+
+        <div class="modal-hero-image">
+            <img src="photo_2026-11-24_16-00-07.jpg" alt="موشک فتاح">
+        </div>
+
+        <div class="modal-body">
+            <span class="modal-category">MISSILE SYSTEM / IRAN</span>
+            <h2 id="fattahTitle">فتاح</h2>
+            <div class="modal-divider"></div>
+            <h3>پیشران سوخت جامد</h3>
+            <p>
+                یکی از ویژگی‌های مطرح‌شده درباره فتاح،
+                استفاده از پیشران سوخت جامد است. در گزارش‌های
+                منتشرشده، به فناوری تغییر جهت نیروی رانش
+                نیز اشاره شده است.
+            </p>
+
+            <h3>ساختار و طراحی</h3>
+            <p>
+                فتاح به‌عنوان سامانه‌ای با طراحی متفاوت معرفی
+                شده است. شکل بدنه و بخش سرجنگی آن از جمله
+                ویژگی‌هایی هستند که در تصاویر منتشرشده
+                مورد توجه قرار گرفته‌اند.
+            </p>
+
+            <h3>قابلیت مانور</h3>
+            <p>
+                در معرفی این سامانه به قابلیت مانور اشاره
+                شده است؛ با این حال، جزئیات عملکرد و میزان
+                اثربخشی این قابلیت‌ها به‌طور مستقل تأیید نشده‌اند.
+            </p>
+
+            <div class="modal-warning">
+                <strong>یادداشت آرشیو:</strong>
+                بخشی از اطلاعات فنی فتاح بر اساس گزارش‌های
+                منتشرشده و ادعاهای رسمی است و همه جزئیات
+                آن در منابع مستقل تأیید نشده‌اند.
+            </div>
+
+            <div class="modal-footer">
+                <span>#FATTAH</span>
+                <span>PUBLIC INFORMATION</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SEJJIL MODAL -->
+<div class="modal-overlay" id="sejjilModal"
+     onclick="closeOutside(event, 'sejjilModal')">
+
+    <div class="modal-content sejjil-modal" role="dialog"
+         aria-modal="true" aria-labelledby="sejjilTitle">
+
+        <button class="modal-close"
+                onclick="closeModal('sejjilModal')"
+                aria-label="بستن پنجره">&times;</button>
+
+        <!-- تصویر بزرگ بالای پنجره -->
+        <div class="modal-hero-image sejjil-hero">
+            <img src="sp.webp" alt="تصویر اصلی موشک سجیل">
+
+            <div class="hero-image-caption">
+                <span>SEJJIL</span>
+                <small>MISSILE SYSTEM / IRAN</small>
+            </div>
+        </div>
+
+        <!-- محتوای دو ستونه -->
+        <div class="modal-body">
+
+            <span class="modal-category">MISSILE SYSTEM / IRAN</span>
+            <h2 id="sejjilTitle">موشک سجیل</h2>
+
+            <div class="modal-divider"></div>
+
+            <div class="sejjil-layout">
+
+                <!-- ستون متن -->
+                <div class="sejjil-text">
+
+                    <h3>معرفی سامانه</h3>
+                    <p>
+                        سجیل یکی از سامانه‌های موشکی بالستیک
+                        معرفی‌شده در ایران است. این موشک به دلیل
+                        استفاده از سوخت جامد و ساختار دومرحله‌ای،
+                        از سامانه‌های شناخته‌شده این خانواده محسوب می‌شود.
+                    </p>
+
+                    <h3>پیشران سوخت جامد</h3>
+                    <p>
+                        یکی از ویژگی‌های اصلی سجیل، استفاده از
+                        سوخت جامد است. این فناوری در طراحی
+                        موشک‌های بالستیک اهمیت زیادی دارد.
+                    </p>
+
+                    <h3>ساختار دومرحله‌ای</h3>
+                    <p>
+                        سجیل دارای ساختار دومرحله‌ای است؛
+                        یعنی در طراحی آن دو بخش پیشران در نظر
+                        گرفته شده است. این ویژگی از مشخصات
+                        عمومی اعلام‌شده درباره این سامانه است.
+                    </p>
+
+                    <h3>برد اعلام‌شده</h3>
+                    <p>
+                        درباره برد سجیل ارقام مختلفی در منابع
+                        عمومی منتشر شده است. این ارقام باید با
+                        توجه به منبع و اعتبار گزارش بررسی شوند
+                        و نباید همه آن‌ها را مشخصات قطعی دانست.
+                    </p>
+
+                    <h3>مسیر پرواز</h3>
+                    <p>
+                        مسیر پرواز موشک‌های بالستیک در منابع
+                        عمومی معمولاً به‌صورت نمودارهای ارتفاع
+                        و زمان نمایش داده می‌شود. اطلاعات
+                        منتشرشده درباره مسیر پرواز سجیل نیز
+                        نیازمند بررسی و تأیید مستقل است.
+                    </p>
+
+                </div>
+<!-- ستون تصویر دوم -->
+                <div class="sejjil-picture">
+                    <img src="st.jpg"
+                         alt="تصویر تکمیلی موشک سجیل">
+
+                    <span class="picture-caption">
+                        SEJJIL — ARCHIVE IMAGE
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="modal-warning">
+                <strong>یادداشت آرشیو:</strong>
+                ارقام و نمودارهای منتشرشده درباره برد و مسیر
+                پرواز باید با توجه به اعتبار منبع بررسی شوند.
+                این بخش صرفاً برای معرفی عمومی سامانه است.
+            </div>
+
+            <div class="modal-footer">
+                <span>#SEJJIL</span>
+                <span>PUBLIC INFORMATION</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div>
+            <h3>MILITARY ARCHIVE</h3>
+            <p>Public Military Information Database</p>
+        </div>
+
+        <span>© 2026 MILITARY ARCHIVE</span>
+    </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+    let lastFocusedElement = null;
+
+    function openModal(id) {
+        const modal = document.getElementById(id);
+        if (!modal) return;
+
+        document.querySelectorAll(".modal-overlay.active")
+            .forEach(item => item.classList.remove("active"));
+
+        lastFocusedElement = document.activeElement;
+        modal.classList.add("active");
+        document.body.classList.add("modal-open");
+
+        modal.querySelector(".modal-close").focus();
+    }
+
+    function closeModal(id) {
+        const modal = document.getElementById(id);
+        if (!modal) return;
+
+        modal.classList.remove("active");
+        document.body.classList.remove("modal-open");
+
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
+    }
+
+    function closeOutside(event, id) {
+        if (event.target.id === id) {
+            closeModal(id);
+        }
+    }
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            document.querySelectorAll(".modal-overlay.active")
+                .forEach(modal => closeModal(modal.id));
+        }
+    });
+</script>
+
+</body>
+</html>
